@@ -1,2 +1,0 @@
-# Glass-.github.io
-Стёкла
