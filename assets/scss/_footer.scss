@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+footer {
+  background-color: rgb(17, 24, 39);
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px 10px;
+    padding-bottom: 0;
+
+
+    .left {
+      max-width: 305px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      a {
+        font-size: 24px;
+        color: #fff;
+        text-decoration: none;
+        font-family: "inter", sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .logo {
+          width: 120px;
+          height: 120px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        color: rgb(75, 85, 99);
+        line-height: 150%;
+
+      }
+    }
+
+    .center {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .head-link {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 1.25rem;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      .link {
+        color: #6b7280;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25rem;
+        text-decoration: none;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .head-link {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 600;
+        line-height: 1.25rem;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+    @media(max-width:1024px){
+      padding: 40px 20px 0 20px;
+    }
+    @media(max-width:639px){
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
+
+  .bottom-footer {
+    padding: 24px 10px;
+    p {
+      font-size: 14px;
+      color: rgb(75, 85, 99);
+      line-height: 150%;
+    }
+  }
+}
